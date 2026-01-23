@@ -1,9 +1,9 @@
 package domain;
 
-import java.awt.*;
 import java.util.ArrayList;
+import java.util.List;
 
-public class GetSongsUseCase(){
+public class GetSongsUseCase {
 
     private SongRepository songRepository;
 
@@ -11,7 +11,7 @@ public class GetSongsUseCase(){
         this.songRepository = songRepository;
     }
 
-    public List<Song> execute() {
+    public ArrayList<Song> execute() {
         return songRepository.findAll();
     }
 }
