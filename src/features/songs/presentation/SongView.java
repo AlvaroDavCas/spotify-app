@@ -1,16 +1,16 @@
-package presentation;
+package features.songs.presentation;
 
-import data.SongDataRepository;
-import domain.GetSongsUseCase;
-import domain.Song;
 
+import features.songs.data.SongDataRepository;
+import features.songs.domain.GetSongsUseCase;
+import features.songs.domain.Song;
 
 import java.util.ArrayList;
 
 public class SongView {
 
     public static void printSongs() {
-        GetSongsUseCase getSongsUseCase = new SongDataRepository(new SongDataRepository());
+        GetSongsUseCase getSongsUseCase = new GetSongsUseCase(new SongDataRepository());
 
         ArrayList<Song> songsList = getSongsUseCase.execute();
 

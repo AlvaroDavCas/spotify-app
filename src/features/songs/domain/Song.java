@@ -1,4 +1,4 @@
-package domain;
+package features.songs.domain;
 
 public class Song {
 
