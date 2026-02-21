@@ -22,3 +22,4 @@ public class AlbumDataRepository implements AlbumRepository {
     public void saveAlbum(Album album) {
         albumMemLocalDataSource.save(album);
     }
+}

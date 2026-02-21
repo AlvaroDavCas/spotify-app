@@ -1,9 +1,10 @@
 package features.albums.data;
 
 import features.albums.domain.Album;
+
 import java.util.ArrayList;
 
-public class AlbumMemLocalSource {
+public class AlbumMemLocalDataSource {
 
     private static AlbumMemLocalDataSource instance = null;
 
